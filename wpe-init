@@ -1,8 +1,5 @@
 #!/bin/sh
 
-udevd &
-udevadm trigger
+/etc/init.d/wpeframework start
+/bin/bash
 
-fbcp &
-
-WPE_BCMRPI_TOUCH=1 WPELauncher $WPE_URL
