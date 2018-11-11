@@ -11,12 +11,14 @@ IMAGE_INSTALL_append += " \
 	tslib-tests \
 	ttf-bitstream-vera \
 	gstreamer1.0-plugins-base-alsa \
-	wpebackend \
 	wpebackend-rdk \
 	wpeframework \
 	wpeframework-plugins \
 	wpewebkit \
 	wpewebkit-web-inspector-plugin \
+        strace \ 
+        gdb \
+        ldd \
 	"
 
 VIRTUAL-RUNTIME_init_manager="busybox"
