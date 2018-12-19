@@ -10,7 +10,7 @@ source poky/oe-init-build-env build
 bitbake resin-wpe-image
 
 VERSION=$(git describe --dirty --always)
-IMAGE="bobbybeckmann/resin-wpe:$MACHINE-$VERSION-1"
+IMAGE="bobbybeckmann/resin-wpe:$MACHINE-$VERSION"
 
 sudo docker import - $IMAGE < tmp-glibc/deploy/images/$MACHINE/resin-wpe-image-$MACHINE.tar.gz
 
